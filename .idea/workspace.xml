@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="be0a11dc-f9d2-4f09-8b2e-b52494aec7c4" name="Default Changelist" comment="First commit: App header">
-      <change afterPath="$PROJECT_DIR$/src/Hooks/useFetchLaunches.ts" afterDir="false" />
+    <list default="true" id="be0a11dc-f9d2-4f09-8b2e-b52494aec7c4" name="Default Changelist" comment="Bringing it together">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Hooks/useFetchLaunches.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hooks/useFetchLaunches.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,6 +43,13 @@
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Components/Map" />
+      <recent name="$PROJECT_DIR$/src/Components" />
+      <recent name="$PROJECT_DIR$/src/Components/Loader" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -50,7 +58,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607174676821</updated>
-      <workItem from="1607174678732" duration="3800000" />
+      <workItem from="1607174678732" duration="8804000" />
     </task>
     <task id="LOCAL-00001" summary="First commit: App header">
       <created>1607175664383</created>
@@ -59,7 +67,35 @@
       <option name="project" value="LOCAL" />
       <updated>1607175664383</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Base app">
+      <created>1607178591616</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1607178591616</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Loader component">
+      <created>1607183375034</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1607183375034</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Error component">
+      <created>1607183467864</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1607183467864</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Map component">
+      <created>1607183568212</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1607183568212</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -78,7 +114,12 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit: App header" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit: App header" />
+    <MESSAGE value="Base app" />
+    <MESSAGE value="Loader component" />
+    <MESSAGE value="Error component" />
+    <MESSAGE value="Map component" />
+    <MESSAGE value="Bringing it together" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bringing it together" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

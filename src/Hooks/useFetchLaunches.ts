@@ -38,9 +38,11 @@ export const useFetchLaunches = (fromDate?: string, toDate?: string) => {
       axios
         .get(`${API_URL}/${dates.from}/${dates.to}`)
         .then(({ data }) => {
-          setLaunchesResponseData({ launches: data.launches });
+          setLaunchesResponseData({
+            launches: data.launches,
+          });
         })
-        .catch((error) => {
+        .catch(() => {
           setLaunchesResponseData({ error: "An error occurred." });
         });
     }
