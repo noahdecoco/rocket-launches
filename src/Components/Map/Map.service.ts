@@ -8,7 +8,7 @@ export class MapService {
         return {
           id: firstPad.id,
           name: firstPad.name,
-          coordinates: [firstPad.latitude, firstPad.longitude],
+          coordinates: [firstPad.longitude, firstPad.latitude],
         };
       }
     );

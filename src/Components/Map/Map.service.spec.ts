@@ -20,7 +20,7 @@ describe("The MapService", () => {
       {
         id: 42,
         name: "test-name",
-        coordinates: [1234, 4321],
+        coordinates: [4321, 1234],
       },
     ]);
   });

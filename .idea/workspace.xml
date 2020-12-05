@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be0a11dc-f9d2-4f09-8b2e-b52494aec7c4" name="Default Changelist" comment="Test for mapping markers">
-      <change afterPath="$PROJECT_DIR$/src/Components/Map/Map.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Map/Map.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Map/Map.types.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Map/Map.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Map/Map.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Map/Map.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Map/Map.service.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Map/Map.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Map/Map.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +76,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607174676821</updated>
-      <workItem from="1607174678732" duration="9743000" />
+      <workItem from="1607174678732" duration="10199000" />
     </task>
     <task id="LOCAL-00001" summary="First commit: App header">
       <created>1607175664383</created>
@@ -122,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607183727193</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Test for mapping markers">
+      <created>1607184659175</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1607184659175</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
