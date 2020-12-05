@@ -1,0 +1,19 @@
+.screen {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(00, 00, 00, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.errorText {
+  padding: 1rem;
+  background: #ee0000;
+  font-size: 1.6rem;
+  text-shadow: 0 0 15px rgba(0, 0, 0, 1);
+}
