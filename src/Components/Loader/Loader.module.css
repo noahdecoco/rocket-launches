@@ -1,0 +1,17 @@
+.screen {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(00, 00, 00, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loadingText {
+  font-size: 1.6rem;
+  text-shadow: 0 0 15px rgba(0, 0, 0, 1);
+}
