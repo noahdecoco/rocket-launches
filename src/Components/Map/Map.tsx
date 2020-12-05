@@ -7,14 +7,11 @@ import {
   ZoomableGroup,
 } from "react-simple-maps";
 
+import { MappedMarker } from "./Map.types";
+import { MapService } from "./Map.service";
+
 const geoUrl =
   "https://raw.githubusercontent.com/zcreativelabs/react-simple-maps/master/topojson-maps/world-110m.json";
-
-interface MappedMarker {
-  id: string;
-  name: string;
-  coordinates: number[];
-}
 
 type Props = {
   launches: any[] | undefined;
@@ -25,19 +22,7 @@ export const Map: React.FC<Props> = ({ launches }) => {
 
   useEffect(() => {
     if (launches) {
-      const mappedMarkers: MappedMarker[] = launches.map(
-        (launch): MappedMarker => {
-          return {
-            id: launch.id,
-            name: launch.location.pads[0].name,
-            coordinates: [
-              launch.location.pads[0].latitude,
-              launch.location.pads[0].longitude,
-            ],
-          };
-        }
-      );
-      setMarkers(mappedMarkers);
+      setMarkers(MapService.mapLaunches(launches));
     }
   }, [launches]);
 
