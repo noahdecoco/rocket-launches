@@ -1,0 +1,15 @@
+.app {
+}
+
+.appHeader {
+  padding: 0.4rem 2rem;
+  border-bottom: 1px solid #eee;
+}
+
+.appHeaderTitle {
+  font-size: 2rem;
+}
+
+.error {
+  background-color: red;
+}
