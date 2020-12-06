@@ -4,7 +4,7 @@
     <list default="true" id="be0a11dc-f9d2-4f09-8b2e-b52494aec7c4" name="Default Changelist" comment="Stricter types and try catch for mapping launch data">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.spec.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.spec.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Hooks/useFetchLaunches.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hooks/useFetchLaunches.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +98,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607174676821</updated>
-      <workItem from="1607174678732" duration="27104000" />
+      <workItem from="1607174678732" duration="28305000" />
     </task>
     <task id="LOCAL-00001" summary="First commit: App header">
       <created>1607175664383</created>
@@ -198,7 +198,28 @@
       <option name="project" value="LOCAL" />
       <updated>1607261633667</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Refactor, tighten and tidy up">
+      <created>1607262415471</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1607262415471</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Refactor, tighten and tidy up">
+      <created>1607262437195</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1607262437195</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Stricter types and try catch for mapping launch data">
+      <created>1607262549614</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1607262549614</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,9 +245,9 @@
     <MESSAGE value="Bringing it together" />
     <MESSAGE value="Test for mapping markers" />
     <MESSAGE value="Fixed coordinates" />
-    <MESSAGE value="Stricter types and try catch for mapping launch data" />
     <MESSAGE value="Refactor, tighten and tidy up" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor, tighten and tidy up" />
+    <MESSAGE value="Stricter types and try catch for mapping launch data" />
+    <option name="LAST_COMMIT_MESSAGE" value="Stricter types and try catch for mapping launch data" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

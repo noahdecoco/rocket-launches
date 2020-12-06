@@ -13,18 +13,6 @@ export const useFetchLaunches = (): null | LaunchResponseData => {
 
   const [dates, setDates] = useState<null | DateRange>(null);
 
-  const fetchLaunches = async (url: string) => {
-    try {
-      const response = await axios.get(url);
-      const launches = UseFetchLaunchesService.mapResponseForClient(
-        response.data.launches
-      );
-      setLaunchResponseData({ launches });
-    } catch (error) {
-      setLaunchResponseData({ error: error.message });
-    }
-  };
-
   useEffect(() => {
     // default is to return data for the next three months
     const fromRaw = new Date();
@@ -40,7 +28,25 @@ export const useFetchLaunches = (): null | LaunchResponseData => {
   useEffect(() => {
     if (dates) {
       setLaunchResponseData(null);
-      fetchLaunches(`${API_URL}/${dates.from}/${dates.to}`);
+      const CancelToken = axios.CancelToken;
+      const source = CancelToken.source();
+      try {
+        axios
+          .get(`${API_URL}/${dates.from}/${dates.to}`, {
+            cancelToken: source.token,
+          })
+          .then((response) => {
+            const launches = UseFetchLaunchesService.mapResponseForClient(
+              response.data.launches
+            );
+            setLaunchResponseData({ launches });
+          });
+      } catch (error) {
+        setLaunchResponseData({ error: error.message });
+      }
+      return () => {
+        source.cancel();
+      };
     }
   }, [dates]);
 
