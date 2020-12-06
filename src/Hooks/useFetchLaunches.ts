@@ -1,54 +1,48 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { DateRange, LaunchResponseData } from "./useFetchLaunches.types";
+import { UseFetchLaunchesService } from "./useFetchLaunches.service";
 
 const API_URL = "https://launchlibrary.net/1.3/launch";
 
-export interface LaunchResponseData {
-  error?: string;
-  launches?: any[];
-}
-
-export interface Dates {
-  from: string;
-  to: string;
-}
-
-const getFormattedDate = (date: Date): string => {
-  return date.toISOString().split("T")[0];
-};
-
-export const useFetchLaunches = (fromDate?: string, toDate?: string) => {
+export const useFetchLaunches = (): null | LaunchResponseData => {
   const [
-    launchesResponseData,
-    setLaunchesResponseData,
+    launchResponseData,
+    setLaunchResponseData,
   ] = useState<null | LaunchResponseData>(null);
 
-  const [dates, setDates] = useState<null | Dates>(null);
+  const [dates, setDates] = useState<null | DateRange>(null);
 
   const fetchLaunches = async (url: string) => {
     try {
       const response = await axios.get(url);
-      setLaunchesResponseData({
-        launches: response.data.launches,
-      });
+      const launches = UseFetchLaunchesService.mapResponseForClient(
+        response.data.launches
+      );
+      setLaunchResponseData({ launches });
     } catch (error) {
-      setLaunchesResponseData({ error: "An error occurred." });
+      setLaunchResponseData({ error: error.message });
     }
   };
 
   useEffect(() => {
     // default is to return data for the next three months
-    const from = new Date();
-    const to = new Date();
-    to.setDate(to.getDate() + 90);
-    setDates({ from: getFormattedDate(from), to: getFormattedDate(to) });
-  }, [fromDate, toDate]);
+    const fromRaw = new Date();
+    const from = UseFetchLaunchesService.getFormattedDate(fromRaw);
+
+    const toRaw = new Date();
+    toRaw.setDate(toRaw.getDate() + 90);
+    const to = UseFetchLaunchesService.getFormattedDate(toRaw);
+
+    setDates({ from, to });
+  }, []);
 
   useEffect(() => {
     if (dates) {
+      setLaunchResponseData(null);
       fetchLaunches(`${API_URL}/${dates.from}/${dates.to}`);
     }
   }, [dates]);
 
-  return launchesResponseData;
+  return launchResponseData;
 };

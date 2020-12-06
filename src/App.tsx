@@ -1,6 +1,8 @@
 import React from "react";
 
-import { LaunchResponseData, useFetchLaunches } from "./Hooks/useFetchLaunches";
+import { LaunchResponseData } from "./Hooks/useFetchLaunches.types";
+
+import { useFetchLaunches } from "./Hooks/useFetchLaunches";
 import { Loader } from "./Components/Loader/Loader";
 import { ErrorAlert } from "./Components/ErrorAlert/ErrorAlert";
 import { Map } from "./Components/Map/Map";
@@ -8,7 +10,7 @@ import { Map } from "./Components/Map/Map";
 import styles from "./App.module.css";
 
 function App() {
-  const launchResponseData: LaunchResponseData | null = useFetchLaunches();
+  const launchResponseData: null | LaunchResponseData = useFetchLaunches();
 
   return (
     <div className={styles.app}>
