@@ -1,0 +1,162 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App/> renders the loader only when data is null 1`] = `
+<DocumentFragment>
+  <div
+    class="app"
+  >
+    <header
+      class="appHeader"
+    >
+      <h1
+        class="appHeaderTitle"
+        data-testid="app-title"
+      >
+        🚀 📆 Moonshot Calendar Inc.
+      </h1>
+    </header>
+    <main>
+      <div
+        class="screen"
+        data-testid="app-loader"
+      >
+        <span
+          class="loadingText"
+        >
+          Loading...
+        </span>
+      </div>
+    </main>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<App/> should render the empty map and error when data loads 1`] = `
+<DocumentFragment>
+  <div
+    class="app"
+  >
+    <header
+      class="appHeader"
+    >
+      <h1
+        class="appHeaderTitle"
+        data-testid="app-title"
+      >
+        🚀 📆 Moonshot Calendar Inc.
+      </h1>
+    </header>
+    <main>
+      <div
+        class="screen"
+        data-testid="error-alert"
+      >
+        <span
+          class="errorText"
+        >
+          test-error-message
+        </span>
+      </div>
+      <div
+        class="mapContainer"
+        data-testid="map-container"
+      >
+        <svg
+          class="rsm-svg "
+          viewBox="0 0 800 600"
+        >
+          <g>
+            <rect
+              fill="transparent"
+              height="600"
+              width="800"
+            />
+            <g
+              class="rsm-zoomable-group undefined"
+              transform="translate(0 0) scale(1)"
+            >
+              <g
+                class="rsm-geographies "
+              />
+            </g>
+          </g>
+        </svg>
+      </div>
+    </main>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<App/> should render the map when data loads 1`] = `
+<DocumentFragment>
+  <div
+    class="app"
+  >
+    <header
+      class="appHeader"
+    >
+      <h1
+        class="appHeaderTitle"
+        data-testid="app-title"
+      >
+        🚀 📆 Moonshot Calendar Inc.
+      </h1>
+    </header>
+    <main>
+      <div
+        class="mapContainer"
+        data-testid="map-container"
+      >
+        <svg
+          class="rsm-svg "
+          viewBox="0 0 800 600"
+        >
+          <g>
+            <rect
+              fill="transparent"
+              height="600"
+              width="800"
+            />
+            <g
+              class="rsm-zoomable-group undefined"
+              transform="translate(0 0) scale(1)"
+            >
+              <g
+                class="rsm-geographies "
+              />
+              <g
+                class="rsm-marker "
+                transform="translate(810.210030067051, 296.41121365738474)"
+              >
+                <g
+                  fill="none"
+                  stroke="#FF5533"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  transform="translate(-12, -24)"
+                >
+                  <circle
+                    cx="12"
+                    cy="10"
+                    r="3"
+                  />
+                  <path
+                    d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 6.9 8 11.7z"
+                  />
+                </g>
+                <text
+                  style="font-family: system-ui; fill: #5D5A6D; font-size: 0.6rem;"
+                  text-anchor="middle"
+                >
+                  test-name
+                </text>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </div>
+    </main>
+  </div>
+</DocumentFragment>
+`;

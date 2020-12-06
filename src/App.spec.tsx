@@ -11,24 +11,33 @@ describe("<App/>", () => {
   });
 
   it("renders the loader only when data is null", () => {
-    render(<App />);
+    const wrapper = render(<App />);
 
     const loaderElement = screen.queryByTestId("app-loader");
     const errorElement = screen.queryByTestId("error-alert");
     const mapContainer = screen.queryByTestId("map-container");
 
     expect(loaderElement).toBeInTheDocument();
+    expect(errorElement).toBeNull();
     expect(mapContainer).toBeNull();
+
+    expect(wrapper.asFragment()).toMatchSnapshot();
   });
 
   it("should render the map when data loads", () => {
     jest.spyOn(hooks, "useFetchLaunches").mockImplementationOnce(() => {
       return {
-        launches: [{ name: "test-name", location: { pads: [{ id: "123" }] } }],
+        launches: [
+          {
+            name: "test-name",
+            id: "1234",
+            coordinates: [1234, 4321],
+          },
+        ],
       };
     });
 
-    render(<App />);
+    const wrapper = render(<App />);
 
     const loaderElement = screen.queryByTestId("app-loader");
     const errorElement = screen.queryByTestId("error-alert");
@@ -37,6 +46,8 @@ describe("<App/>", () => {
     expect(loaderElement).not.toBeInTheDocument();
     expect(errorElement).toBeNull();
     expect(mapContainer).toBeInTheDocument();
+
+    expect(wrapper.asFragment()).toMatchSnapshot();
   });
 
   it("should render the empty map and error when data loads", () => {
@@ -46,7 +57,7 @@ describe("<App/>", () => {
       };
     });
 
-    render(<App />);
+    const wrapper = render(<App />);
 
     const loaderElement = screen.queryByTestId("app-loader");
     const errorElement = screen.queryByTestId("error-alert");
@@ -55,5 +66,7 @@ describe("<App/>", () => {
     expect(loaderElement).not.toBeInTheDocument();
     expect(errorElement).toBeInTheDocument();
     expect(mapContainer).toBeInTheDocument();
+
+    expect(wrapper.asFragment()).toMatchSnapshot();
   });
 });
