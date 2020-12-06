@@ -2,16 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be0a11dc-f9d2-4f09-8b2e-b52494aec7c4" name="Default Changelist" comment="Fixed coordinates">
+      <change afterPath="$PROJECT_DIR$/src/Hooks/useFetchLaunches.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hooks/useFetchLaunches.types.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.spec.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/ErrorAlert/ErrorAlert.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ErrorAlert/ErrorAlert.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Loader/Loader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Loader/Loader.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Map/Map.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Map/Map.service.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Map/Map.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Map/Map.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Map/Map.types.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Hooks/useFetchLaunches.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hooks/useFetchLaunches.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +106,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607174676821</updated>
-      <workItem from="1607174678732" duration="22481000" />
+      <workItem from="1607174678732" duration="24173000" />
     </task>
     <task id="LOCAL-00001" summary="First commit: App header">
       <created>1607175664383</created>
