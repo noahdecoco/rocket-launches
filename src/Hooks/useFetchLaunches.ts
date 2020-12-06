@@ -25,6 +25,17 @@ export const useFetchLaunches = (fromDate?: string, toDate?: string) => {
 
   const [dates, setDates] = useState<null | Dates>(null);
 
+  const fetchLaunches = async (url: string) => {
+    try {
+      const response = await axios.get(url);
+      setLaunchesResponseData({
+        launches: response.data.launches,
+      });
+    } catch (error) {
+      setLaunchesResponseData({ error: "An error occurred." });
+    }
+  };
+
   useEffect(() => {
     // default is to return data for the next three months
     const from = new Date();
@@ -35,16 +46,7 @@ export const useFetchLaunches = (fromDate?: string, toDate?: string) => {
 
   useEffect(() => {
     if (dates) {
-      axios
-        .get(`${API_URL}/${dates.from}/${dates.to}`)
-        .then(({ data }) => {
-          setLaunchesResponseData({
-            launches: data.launches,
-          });
-        })
-        .catch(() => {
-          setLaunchesResponseData({ error: "An error occurred." });
-        });
+      fetchLaunches(`${API_URL}/${dates.from}/${dates.to}`);
     }
   }, [dates]);
 

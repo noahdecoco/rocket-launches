@@ -52,7 +52,11 @@ export const Map: React.FC<Props> = ({ launches }) => {
             </g>
             <text
               textAnchor="middle"
-              style={{ fontFamily: "system-ui", fill: "#5D5A6D" }}
+              style={{
+                fontFamily: "system-ui",
+                fill: "#5D5A6D",
+                fontSize: "0.6rem",
+              }}
             >
               {name}
             </text>
