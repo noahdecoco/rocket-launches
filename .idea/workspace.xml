@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="be0a11dc-f9d2-4f09-8b2e-b52494aec7c4" name="Default Changelist" comment="Test for mapping markers">
+    <list default="true" id="be0a11dc-f9d2-4f09-8b2e-b52494aec7c4" name="Default Changelist" comment="Stricter types and try catch for mapping launch data">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Map/Map.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Map/Map.service.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Map/Map.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Map/Map.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Hooks/useFetchLaunches.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hooks/useFetchLaunches.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +16,29 @@
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="2" />
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="tests" />
+                    <option name="lastUsedInstant" value="1607187075" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1607187074" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
   </component>
   <component name="ProjectId" id="1lEufgoyTi2YcaBauTWwTotMoqm" />
   <component name="ProjectLevelVcsManager">
@@ -76,7 +98,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607174676821</updated>
-      <workItem from="1607174678732" duration="10199000" />
+      <workItem from="1607174678732" duration="28305000" />
     </task>
     <task id="LOCAL-00001" summary="First commit: App header">
       <created>1607175664383</created>
@@ -127,7 +149,77 @@
       <option name="project" value="LOCAL" />
       <updated>1607184659175</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Fixed coordinates">
+      <created>1607185242063</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1607185242063</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Stricter types and try catch for mapping launch data">
+      <created>1607259451537</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1607259451537</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Refactor, tighten and tidy up">
+      <created>1607260465283</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1607260465283</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Refactor, tighten and tidy up">
+      <created>1607261162409</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1607261162409</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Refactor, tighten and tidy up">
+      <created>1607261225262</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1607261225262</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Refactor, tighten and tidy up">
+      <created>1607261571942</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1607261571942</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Refactor, tighten and tidy up">
+      <created>1607261633667</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1607261633667</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Refactor, tighten and tidy up">
+      <created>1607262415471</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1607262415471</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Refactor, tighten and tidy up">
+      <created>1607262437195</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1607262437195</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Stricter types and try catch for mapping launch data">
+      <created>1607262549614</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1607262549614</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,7 +244,10 @@
     <MESSAGE value="Map component" />
     <MESSAGE value="Bringing it together" />
     <MESSAGE value="Test for mapping markers" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test for mapping markers" />
+    <MESSAGE value="Fixed coordinates" />
+    <MESSAGE value="Refactor, tighten and tidy up" />
+    <MESSAGE value="Stricter types and try catch for mapping launch data" />
+    <option name="LAST_COMMIT_MESSAGE" value="Stricter types and try catch for mapping launch data" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

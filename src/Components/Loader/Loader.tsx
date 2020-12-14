@@ -1,10 +1,15 @@
 import React from "react";
 
+import globalStyles from "../../Styles/GlobalStyles.module.css";
 import styles from "./Loader.module.css";
 
-export const Loader: React.FC = () => {
+type Props = {
+  "data-testid": string;
+};
+
+export const Loader: React.FC<Props> = ({ "data-testid": dataTestId }) => {
   return (
-    <div className={styles.screen}>
+    <div className={globalStyles.screen} data-testid={dataTestId}>
       <span className={styles.loadingText}>Loading...</span>
     </div>
   );
